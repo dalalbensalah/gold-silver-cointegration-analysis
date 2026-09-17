@@ -4,7 +4,7 @@ Analyse de cointégration, modélisation VAR/VECM et fonctions de réponse impul
 
 ## Ce que ce projet montre en 30 secondes
 
-- **La relation "évidente" entre or et argent ne l'est pas** : cointégration détectée mais épisodique, pas structurelle — elle apparaît et disparaît selon les périodes (analyse en fenêtre glissante)
+- **La relation "évidente" entre or et argent ne l'est pas** : cointégration détectée mais épisodique, pas structurelle, elle apparaît et disparaît selon les périodes (analyse en fenêtre glissante)
 - **Prévision hors échantillon sous 1,5 % de MAPE** sur les deux actifs avec les modèles VAR/VECM
 - **Le contexte macro change la lecture, sans la trancher totalement.** Ajouter l'indice dollar et le taux 10 ans US fait apparaître un signal de cointégration plus net sur certaines périodes (Engle-Granger), mais ce signal n'est pas confirmé par tous les tests (Johansen) — la relation reste conditionnelle au régime macro, pas définitivement restaurée
 
@@ -20,11 +20,11 @@ L'or et l'argent sont classés dans la même case par la plupart des investisseu
 ├── data/                              # Données brutes et transformées (prix or/argent, variables macro)
 ├── figures/                           # Graphiques générés (exploration, résultats, diagnostics)
 ├── notebooks/
-    ├── 01_Data_Exploration.ipynb        # Exploration des données et statistiques descriptives
-    ├── 02_Stationarity_and_Cointegration.ipynb   # Tests de stationnarité et cointégration
-    ├── 03_Bivariate_VAR_VECM.ipynb                # VAR/VECM bivarié (gold, silver)
-    ├── 04_Multivariate_VAR_VECM.ipynb             # VAR/VECM multivarié (+ dollar, taux 10 ans)
-    └── 05_Impulse_Response_and_Rolling.ipynb  #Causalité,IRF/GIRF et robustesse par régime macro
+│   ├── 01_Data_Exploration.ipynb                # Exploration des données et statistiques descriptives
+│   ├── 02_Stationarity_and_Cointegration.ipynb  # Tests de stationnarité (ADF / KPSS) et cointégration
+│   ├── 03_Bivariate_VAR_VECM.ipynb              # VAR/VECM bivarié (gold, silver)
+│   ├── 04_Multivariate_VAR_VECM.ipynb           # VAR/VECM multivarié (+ dollar, taux 10 ans)
+│   └── 05_Impulse_Response_and_Rolling.ipynb    # Causalité, IRF/GIRF et robustesse par régime macro
 ├── report/                            # Rapport détaillé du projet
 └── src/
     ├── cointegration.py               # Fonctions de tests de cointégration
