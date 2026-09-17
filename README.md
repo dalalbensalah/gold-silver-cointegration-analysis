@@ -18,25 +18,28 @@ L'or et l'argent sont classés dans la même case par la plupart des investisseu
 
 ## Structure du repo
 
-​```
-├── data/                                        # Données brutes et transformées (prix or/argent, variables macro)
-├── figures/                                      # Graphiques générés (exploration, résultats, diagnostics)
+## Structure du repo
+
+```
+├── data/                                         # Données brutes et transformées (prix or/argent, variables macro)
+├── figures/                                       # Graphiques générés (exploration, résultats, diagnostics)
 ├── notebooks/
-│   ├── 01_Data_Exploration.ipynb                 # Exploration des données et statistiques descriptives
-│   ├── 02_Stationarity_and_Cointegration.ipynb   # Tests de stationnarité (ADF / KPSS) et cointégration
-│   ├── 03_Bivariate_VAR_VECM.ipynb               # VAR/VECM bivarié (gold, silver)
-│   ├── 04_Multivariate_VAR_VECM.ipynb            # VAR/VECM multivarié (+ dollar, taux 10 ans)
-│   └── 05_Impulse_Response_and_Rolling.ipynb     # Causalité, IRF/GIRF et robustesse par régime macro
-├── report/                                       # Rapport détaillé du projet
+│   ├── 01_Data_Exploration.ipynb                  # Exploration des données et statistiques descriptives
+│   ├── 02_Stationarity_and_Cointegration.ipynb    # Tests de stationnarité (ADF / KPSS) et cointégration
+│   ├── 03_Bivariate_VAR_VECM.ipynb                # VAR/VECM bivarié (gold, silver)
+│   ├── 04_Multivariate_VAR_VECM.ipynb             # VAR/VECM multivarié (+ dollar, taux 10 ans)
+│   └── 05_Impulse_Response_and_Rolling.ipynb      # Causalité, IRF/GIRF et robustesse par régime macro
+├── report/                                        # Rapport détaillé du projet
 └── src/
-    ├── cointegration.py                          # Fonctions de tests de cointégration
-    ├── data_loader.py                            # Chargement et récupération des données (yfinance)
-    ├── plots.py                                  # Fonctions de visualisation
-    ├── preprocessing.py                          # Nettoyage et préparation des données
-    ├── stationarity.py                           # Fonctions de tests de stationnarité
-    ├── utils.py                                  # Fonctions utilitaires
-    └── var_vecm.py                                # Fonctions de modélisation VAR/VECM
-​```
+    ├── cointegration.py                           # Fonctions de tests de cointégration
+    ├── data_loader.py                             # Chargement et récupération des données (yfinance)
+    ├── plots.py                                   # Fonctions de visualisation
+    ├── preprocessing.py                            # Nettoyage et préparation des données
+    ├── stationarity.py                            # Fonctions de tests de stationnarité
+    ├── utils.py                                    # Fonctions utilitaires
+    └── var_vecm.py                                 # Fonctions de modélisation VAR/VECM
+```
+
 
 ## Méthodologie
 
